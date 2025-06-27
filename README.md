@@ -13,6 +13,6 @@ The Palmoria group, a manufacturing company based in Nigeria, is facing challeng
 - Summarize total payouts across region and company-wide.
   
 ## Data Source
-This project contains two datasets, provided as part of a case study by [Digital Skilled-up Africa(DSA)](https://www.linkedin.com/company/theincubatorhubng/) for training purposes. They stimulate real-world HR data from a fictional company, Palmora Group:
+This project contains two datasets, provided as part of a case study by [Digital Skilled-up Africa (DSA)](https://www.linkedin.com/company/theincubatorhubng/) for training purposes. They stimulate real-world HR data from a fictional company, Palmora Group:
   1. The first dataset, Palmoria Group emp-data.csv, contains the employees records. It serves as the primary data for analyzing individual bonuses.
   2. Palmoria Group Bonus Rules.xlsx, the second dataset, contains bonus rates for various departments based on performance ratings.
