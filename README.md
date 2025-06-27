@@ -1,4 +1,4 @@
-# PALMORA-GROUP-HR-ANALYSIS
+# PROJECT TOPIC: PALMORA-GROUP-HR-ANALYSIS
 ## Project Overview
 The Palmoria group, a manufacturing company based in Nigeria, is facing challenges bordering on gender inequality in its 3 regions. As an HR Analytics expert, my role is to analyze the company data and generate insights that the company's management team would need to address focusing on gender-related issues and using appropriate charts.
 ## Objectives
@@ -14,5 +14,5 @@ The Palmoria group, a manufacturing company based in Nigeria, is facing challeng
   
 ## Data Source
 This project contains two datasets, provided as part of a case study by [Digital Skilled-up Africa(DSA)](htttps://www.linkedin.com/company/theincubatorhubng/) for training purposes. They stimulate real-world HR data from a fictional company, Palmora Group:
-  1. F
-  2.  
+  1. The first dataset, Palmoria Group emp-data.csv, contains the employees records. It serves as the primary data for analyzing individual bonuses.
+  2. Palmoria Group Bonus Rules.xlsx, the second dataset, contains bonus rates for various departments based on performance ratings.
