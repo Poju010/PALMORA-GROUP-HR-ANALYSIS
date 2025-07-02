@@ -36,19 +36,49 @@ While many calculations were handled in Power Query, several DAX (Data Analysis 
 * `Employees Above Minimum Wage`: Identifies employees earning at least $90,000.
 * `Total Bonus Company-wide`: Aggregates all individual bonus amounts (from the Power Query custom column).
 * `Total Pay Company-wide`: Aggregates all total pay amounts (from the Power Query custom column).
+* **`Average Male Salary`**: Calculates the average salary specifically for male employees.
+    ```DAX
+    Average Male Salary =
+    CALCULATE (
+        AVERAGE ( 'Employee'[Salary] ),
+        'Employee'[Gender] = "Male"
+    )
+    ```
+* **`Average Female Salary`**: Calculates the average salary specifically for female employees.
+    ```DAX
+    Average Female Salary =
+    CALCULATE (
+        AVERAGE ( 'Employee'[Salary] ),
+        'Employee'[Gender] = "Female"
+    )
+    ```
+* **`Gender Pay Gap`**: Calculates the percentage difference between average male and female salaries, representing the gender pay gap. 
+    ```DAX
+    Gender Pay Gap =
+    DIVIDE (
+        [Average Male Salary] - [Average Female Salary],
+        [Average Male Salary],
+        0
+    )
+    ```
 ## Visualizations
-
 The Power BI report is organized into two main pages, providing a comprehensive view of HR analytics at Palmoria Group.
-
-### Page 1: Gender Diversity and Compensation Analysis
+### Page 1
 This page focuses on addressing the core issues of gender representation and potential pay gaps within the organization.
-
-* **Key Performance Indicators (KPIs):** Card visuals prominently display `Total Employees`, `Total Female`, `Total Male`, `Undisclosed` employees, and the `Total Employees Below $90,000` minimum wage, offering a quick snapshot of the workforce and compliance.
-* **Gender Distribution:** A **Donut Chart** visually represents the overall percentage breakdown of employees by gender (Male, Female, Undisclosed), providing an immediate understanding of the company's gender composition.
-    * ![Overall Gender Distribution](screenshots/1st_page_Capture.PNG) *(You might crop this image to show just the donut chart or the overall page)*
-* **Gender Distribution by Department:** A **100% Stacked Bar Chart** illustrates the gender composition within each department (Finance, HR, Marketing, Operations, Sales), helping to identify departments with significant gender imbalances.
-* **Rating by Gender:** A **Clustered Column Chart** compares employee performance ratings across genders, allowing for the identification of potential biases in performance evaluations.
-* **Average Salary by Department & Gender:** A **Clustered Bar Chart** displays the average salary for each gender within different departments, crucial for identifying and quantifying potential gender pay gaps at the departmental level.
-* **Average Salary by Location & Gender:** A **Clustered Column Chart** presents the average salary by gender across the company's three regions (North, South, West), highlighting regional pay disparities and their impact on gender equality.
-* **Interactive Slicers:** Dedicated slicers for `Department`, `Location`, and `Gender` enable users to dynamically filter the data and explore specific segments of the workforce.
+* **Interactive Slicers:** Dedicated slicers for `Gender`, `Department`, and `Region` enable users to dynamically filter the data and explore specific segments of the workforce.
+* **Regional Employee Distribution:** A **Pie Chart** visually breaks down the total employee count by region (Kaduna, Abuja, Lagos), indicating that Kaduna has the largest share of employees at 38% (361 employees). This helps understand the geographical distribution of the workforce.
+* **Total Employees by Gender:** A **Pie Chart** provides an overall breakdown of the total workforce by gender, showing Male (49.2%, 430 employees), Female (46.45%, 406 employees), and Undisclosed (4.35%, 38 employees). This offers a snapshot of the company's gender diversity.
+* **Gender Distribution by Department:** A **100% Stacked Bar Chart** illustrates the gender composition within each department (Accounting, HR, Marketing, Engineering, Sales, etc), helping to identify departments with significant gender imbalances.
+* **Rating by Gender:** A **Line Chart** compares employee performance ratings across genders, allowing for the identification of potential biases in performance evaluations.
+* **Minimum Wage Compliance Gauges:** Two **Gauge visuals** directly display the number of "Employees Earning at least $90k" and "Employees Earning Below $90k", serving as quick visual indicators for regulatory adherence.
+* **Regulation Requirement Compliance:** A **Donut Chart** shows the percentage of employees meeting versus not meeting the $90,000 minimum salary requirement, highlighting the compliance status.
+* **Company Salary Structure & Gender Pay Gap by Department:** A **Table Visual** displays key insights into salary disparities, containing `Department`, `Average Male Salary`, `Average Female Salary`, and `Gender Pay Gap`. This provides a direct and clear comparison of gender pay differences within each department.
+* 
+### Page 2: Compensation and Bonus Analysis
+This page delves deeper into the company's compensation structure, compliance with minimum wage regulations, and the calculated bonus allocations.
+* **Key Compensation Totals:** Card visuals show the `Sum of Salary`, `Total Bonus Company-wide` and `Total Pay Company-wide` across the entire company, providing an high-level financial overview of compensation.
+* **Total Employees by Salary Band:** A **Line and Clustered Column Chart** visualizes the distribution of employees across $10,000 salary bands, indicating where the majority of the workforce falls in terms of earnings.
+* **Total Bonus Company-wide by Region:** A **Clustered Column Chart** presents the total bonus amount allocated per region, showing the regional distribution of bonus payouts.
+* **Total Pay Company-wide by Region:** A **Clustered Column Chart** displays the total compensation (salary inclusive of bonus) distributed across each region.
+* **Bonus Allocation & Total Pay:** A **Table Visual** provides a detailed, row-level breakdown for each employee, showing their `Name`, `Department`, `Salary`, `IAnnual Bonus`, and `Total Pay`.
 
