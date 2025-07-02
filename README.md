@@ -72,7 +72,7 @@ This page focuses on addressing the core issues of gender representation and pot
 * **Rating by Gender:** A **Line Chart** compares employee performance ratings across genders, allowing for the identification of potential biases in performance evaluations.
 * **Minimum Wage Compliance Gauges:** Two **Gauge visuals** directly display the number of "Employees Earning at least $90k" and "Employees Earning Below $90k", serving as quick visual indicators for regulatory adherence.
 * **Regulation Requirement Compliance:** A **Donut Chart** shows the percentage of employees meeting versus not meeting the $90,000 minimum salary requirement, highlighting the compliance status.
-* **Company Salary Structure & Gender Pay Gap by Department:** A **Table Visual** displays key insights into salary disparities, containing `Department`, `Average Male Salary`, `Average Female Salary`, and `Gender Pay Gap`. This provides a direct and clear comparison of gender pay differences within each department.
+* **Gender Pay Gap by Department:** A **Table Visual** displays key insights into salary disparities, containing `Department`, `Average Male Salary`, `Average Female Salary`, and `Gender Pay Gap`. This provides a direct and clear comparison of gender pay differences within each department.
 * 
 ### Page 2: Compensation and Bonus Analysis
 This page delves deeper into the company's compensation structure, compliance with minimum wage regulations, and the calculated bonus allocations.
@@ -81,4 +81,36 @@ This page delves deeper into the company's compensation structure, compliance wi
 * **Total Bonus Company-wide by Region:** A **Clustered Column Chart** presents the total bonus amount allocated per region, showing the regional distribution of bonus payouts.
 * **Total Pay Company-wide by Region:** A **Clustered Column Chart** displays the total compensation (salary inclusive of bonus) distributed across each region.
 * **Bonus Allocation & Total Pay:** A **Table Visual** provides a detailed, row-level breakdown for each employee, showing their `Name`, `Department`, `Salary`, `IAnnual Bonus`, and `Total Pay`.
+* 
+## Recommendations & Insights
+**1. Insights & Recommendations on Gender Distribution:**
+* **Insight:** "The overall gender distribution shows a slight imbalance, with Males comprising 49.2% and Females comprising 46.45% of the total workforce, indicating a need for greater diversity initiatives. This imbalance is particularly pronounced in departments such as `Services` and `Business Development`, where one gender significantly outnumbers the other."
+* **Recommendation:** "Implement targeted recruitment and talent development programs aimed at increasing the representation of underrepresented genders in departments identified with significant imbalances, aim to increase female representation in Product Management by 7.86%. Establish diversity metrics to track progress and hold department heads accountable."
 
+**2. Insights & Recommendations on Performance Rating by Gender:**
+* **Insight:** "Analysis of performance ratings by gender reveals a disproportionate number of males receiving 'Poor' or 'Very Poor' ratings compared to females. For instance, 16.3% of Male employees received 'Poor' ratings, versus 14.3% of Female employees."
+* **Recommendation:** "Conduct a comprehensive review of the performance appraisal process to identify and mitigate potential unconscious biases. Provide mandatory bias awareness training for all managers involved in performance evaluations. Consider implementing standardized performance metrics and calibration sessions across departments."
+
+**3. Insights & Recommendations on Salary Structure and Gender Pay Gap:**
+* **Insight:** A significant gender pay gap has been identified within the company. Overall, males earn an average of 3.55% more than females. This gap is most pronounced in the Human Resources department, showing a 9.78% difference.
+* **Recommendation:** Immediately initiate a detailed compensation audit, focusing on departments with the largest identified gender pay gaps, Human Resources. Develop and implement a structured plan to adjust salaries for underpaid genders to achieve pay equity, ensuring transparency in compensation policies moving forward.
+
+**4. Insights & Recommendations on Minimum Wage Compliance:**
+* **Insight:** "Palmoria Group currently has 292 employees (31%) earning below the newly adopted $90,000 minimum wage regulation, indicating a significant compliance issue for this portion of the workforce. While more employees are earning at least $90k, the presence of 292 employees below the threshold requires immediate attention."
+* **Recommendation:** "Prioritize and allocate a budget of $26.5M to immediately uplift all 31% non-compliant employee salaries to meet the $90,000 minimum requirement. Establish a continuous monitoring system within HR to prevent future non-compliance and ensure all new hires meet the minimum threshold."
+
+**5. Insights & Recommendations on Annual Bonus Allocation & Total Pay:**
+* **Insight:** "The total bonus allocation for the company is $2.20M, with total pay (salary + bonus) reaching $183.29bn. While performance-based, there appears to be a pattern where some of the employees receive disproportionately lower bonus percentages relative to their performance ratings."
+* **Recommendation:** "Review the current bonus allocation rules and their impact on total compensation to ensure they do not inadvertently contribute to gender pay disparities. Consider incorporating equity assessments into the annual bonus review process, ensuring fair distribution based purely on performance and contribution."
+
+## How to Use This Report
+
+1.  Clone this repository to your local machine.
+2.  Ensure you have Power BI Desktop installed.
+3.  Open the `Palmoria_HR_Analysis.pbix` file.
+4.  Interact with the report using the slicers and filters to explore insights across different departments and regions.
+
+## Author
+
+[Your Name/GitHub Username]
+[Your LinkedIn Profile URL (Optional)]
