@@ -111,6 +111,6 @@ This page delves deeper into the company's compensation structure, compliance wi
 4.  Interact with the report using the slicers and filters to explore insights across different departments and regions.
 
 ## Author
-
-[Your Name/GitHub Username]
-[Your LinkedIn Profile URL (Optional)]
+Adepoju Emmanuel
+[GitHub]()
+[LinkedIn](https://www.linkedin.com/in/emmanuel-adepoju-5657032b2)
