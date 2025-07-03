@@ -1,5 +1,4 @@
 # PROJECT TOPIC: PALMORA-GROUP-HR-ANALYSIS. 
-DSA Project on powerBI
 ## Project Overview
 The Palmoria group, a manufacturing company based in Nigeria, is facing challenges bordering on gender inequality in its 3 regions. As an HR Analytics expert, my role is to analyze the company data and generate insights that the company's management team would need to address focusing on gender-related issues and using appropriate charts.
 ## Objectives
