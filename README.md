@@ -62,8 +62,8 @@ While many calculations were handled in Power Query, several DAX (Data Analysis 
     )
     ```
 ## Visualizations
-Here is a preview of the dashboard for reference:  
 The Power BI report is organized into two main pages, providing a comprehensive view of HR analytics at Palmoria Group  
+Here is a preview of the dashboard for reference:  
 ![Page 1](https://github.com/user-attachments/assets/fa6a4d4e-fb97-43aa-815a-66e83a70952c)
 ![Page 2](https://github.com/user-attachments/assets/9bbc7021-bc42-4f55-8b58-46bceb1ef5e0)
 
